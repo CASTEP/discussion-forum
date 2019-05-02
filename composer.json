@@ -8,6 +8,7 @@
             "email": "bjhansen@castep.co"
         }
     ],
+    "license": "proprietary",
     "require": {},
     "autoload": {
         "psr-4": {
