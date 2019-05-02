@@ -1,0 +1,27 @@
+{
+    "name": "castep/discussion-forum",
+    "description": "The Discussion Forum module for the CASTEP LMS.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "BJ Hansen",
+            "email": "bjhansen@castep.co"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "CASTEP\\DiscussionForum": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CASTEP\\DiscussionForum\\Providers\\DiscussionForumProvider"
+            ],
+            "aliases": [
+
+            ]
+        }
+    }
+}
