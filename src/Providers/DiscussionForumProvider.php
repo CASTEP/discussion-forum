@@ -25,7 +25,7 @@ class DiscussionForumProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__."/../../database/migrations");
 
         // load the module into the master config array
-        $enabled_modules = config('modules.enabled');
+        $enabled_modules = is_array(config('modules.enabled')) ? config('modules.enabled') : [];
         $this_module = [
             'name' => 'Discussion Forum',
             'version' => '1.0.0',
