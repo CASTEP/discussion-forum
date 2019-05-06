@@ -31,6 +31,7 @@ class DiscussionForumProvider extends ServiceProvider
                 'name' => 'Discussion Forum',
                 'slug' => 'discussion_forum',
                 'version' => '1.0.0',
+                'required_castep_version' => '^3.0.0',
                 'class' => self::class
             ]
         ];
