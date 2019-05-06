@@ -6,15 +6,6 @@ use Illuminate\Support\ServiceProvider;
 
 class DiscussionForumProvider extends ServiceProvider
 {
-    public $module_name;
-    public $module_version;
-
-    public function __construct()
-    {
-        $this->module_name = "Discussion Forum";
-        $this->module_version = "1.0.0";
-    }
-
     public function register()
     {
 
@@ -36,8 +27,8 @@ class DiscussionForumProvider extends ServiceProvider
         // load the module into the master config array
         $enabled_modules = config('modules.enabled');
         $this_module = [
-            'name' => $this->module_name,
-            'version' => $this->module_version,
+            'name' => 'Discussion Forum',
+            'version' => '1.0.0',
             'class' => self::class
         ];
         $module_config = array_merge($enabled_modules, $this_module);
