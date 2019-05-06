@@ -1,7 +1,7 @@
 {
     "name": "castep/discussion-forum",
     "description": "The Discussion Forum module for the CASTEP LMS.",
-    "type": "project",
+    "type": "package",
     "authors": [
         {
             "name": "BJ Hansen",
